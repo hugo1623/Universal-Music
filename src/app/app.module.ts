@@ -7,8 +7,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DiscsComponent } from './pages/discs/discs.component';
 import { ArtistsComponent } from './pages/artists/artists.component';
+import { HttpClientModule} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { DiscService } from './services/disc.service';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DiscService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
