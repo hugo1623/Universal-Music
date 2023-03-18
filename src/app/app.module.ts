@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DiscsComponent } from './pages/discs/discs.component';
 import { ArtistsComponent } from './pages/artists/artists.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ArtistsComponent } from './pages/artists/artists.component';
     ArtistsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
