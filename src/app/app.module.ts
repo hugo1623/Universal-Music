@@ -6,6 +6,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DiscsComponent } from './pages/discs/discs.component';
+import { ArtistsComponent } from './pages/artists/artists.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DiscsComponent } from './pages/discs/discs.component';
     SidebarComponent,
     HeaderComponent,
     DashboardComponent,
-    DiscsComponent
+    DiscsComponent,
+    ArtistsComponent
   ],
   imports: [
     BrowserModule
