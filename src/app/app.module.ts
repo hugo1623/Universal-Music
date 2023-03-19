@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DiscService } from './services/disc.service';
 import { ArtistService } from './services/artist.service';
+import { DetailDiscsComponent } from './pages/detail-discs/detail-discs.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArtistService } from './services/artist.service';
     HeaderComponent,
     DashboardComponent,
     DiscsComponent,
-    ArtistsComponent
+    ArtistsComponent,
+    DetailDiscsComponent
   ],
   imports: [
     BrowserModule,
