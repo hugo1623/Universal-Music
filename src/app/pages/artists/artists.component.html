@@ -1,1 +1,27 @@
-<p>artists works!</p>
+<div class="col-12">
+    <div class="card">
+        <h3 class="mt-4 px-4"><span>LISTA DE ARTISTAS </span> </h3>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nro</th>
+                        <th>Nombre</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-info" *ngFor="let artist of artists; let i=index">
+                        <td scope="row">{{i+1}}</td>
+                        <td>{{artist.nickname}}</td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-success" >Ver</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

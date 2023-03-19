@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtistService } from '../../services/artist.service';
 
 @Component({
   selector: 'app-artists',
   templateUrl: './artists.component.html',
   styleUrls: ['./artists.component.css']
 })
-export class ArtistsComponent implements OnInit {
+export class ArtistsComponent{
 
-  constructor() { }
+  artists: any = [];
+  constructor(private artistService: ArtistService) {
+    this.getArtists();
+   }
 
-  ngOnInit(): void {
+  getArtists(){
+    return this.artistService.getArtists()
+    .subscribe((data) =>{
+      this.artists = data;
+      });
   }
-
 }

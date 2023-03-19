@@ -11,6 +11,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DiscService } from './services/disc.service';
+import { ArtistService } from './services/artist.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import { DiscService } from './services/disc.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [DiscService],
+  providers: [
+    DiscService,
+    ArtistService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
