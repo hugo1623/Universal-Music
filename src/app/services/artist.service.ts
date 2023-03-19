@@ -13,7 +13,7 @@ export class ArtistService {
     return this.htppClient.get(this.urlBase);
   }
 
-  getArtisById(id: number){
+  getArtistById(id: number){
     return this.htppClient.get(`${this.urlBase}/${id}`)
   }
 }
