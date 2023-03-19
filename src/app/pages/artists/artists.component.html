@@ -15,7 +15,7 @@
                         <td scope="row">{{i+1}}</td>
                         <td>{{artist.nickname}}</td>
                         <td>
-                            <button type="button" class="btn btn-sm btn-success" >Ver</button>
+                            <button type="button" class="btn btn-sm btn-success" (click)="showDetail(artist.id)" >Ver</button>
                         </td>
                     </tr>
                 </tbody>
