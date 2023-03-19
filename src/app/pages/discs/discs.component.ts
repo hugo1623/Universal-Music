@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import {Router} from '@angular/router'
 import { DiscService } from 'src/app/services/disc.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { DiscService } from 'src/app/services/disc.service';
 export class DiscsComponent{
 
   discs : any = [];
-  constructor(private discDervice: DiscService) {
+  constructor(private discDervice: DiscService, private router: Router) {
     this.getDiscs();
   }
   getDiscs(){
@@ -18,5 +19,7 @@ export class DiscsComponent{
       this.discs = data;
     })
   }
-
+  showDetail(id: number){
+    this.router.navigate(['/discs', id])
+  }
 }
