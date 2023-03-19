@@ -8,13 +8,14 @@ import { DiscService } from 'src/app/services/disc.service';
 })
 export class DiscsComponent{
 
+  discs : any = [];
   constructor(private discDervice: DiscService) {
     this.getDiscs();
   }
   getDiscs(){
     this.discDervice.getDiscs()
     .subscribe((data) => {
-      console.log(data);
+      this.discs = data;
     })
   }
 
