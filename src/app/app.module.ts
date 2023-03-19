@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DiscService } from './services/disc.service';
 import { ArtistService } from './services/artist.service';
 import { DetailDiscsComponent } from './pages/detail-discs/detail-discs.component';
+import { DetailArtistComponent } from './pages/detail-artist/detail-artist.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailDiscsComponent } from './pages/detail-discs/detail-discs.componen
     DashboardComponent,
     DiscsComponent,
     ArtistsComponent,
-    DetailDiscsComponent
+    DetailDiscsComponent,
+    DetailArtistComponent
   ],
   imports: [
     BrowserModule,
