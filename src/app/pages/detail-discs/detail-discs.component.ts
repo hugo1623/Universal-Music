@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {ActivatedRoute} from '@angular/router'
 
 @Component({
   selector: 'app-detail-discs',
   templateUrl: './detail-discs.component.html',
   styleUrls: ['./detail-discs.component.css']
 })
-export class DetailDiscsComponent implements OnInit {
+export class DetailDiscsComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private router: ActivatedRoute) { 
+    router.params.subscribe(data =>{
+      console.log('Este es el ID :' +data['id']);
+    })
   }
+
 
 }
