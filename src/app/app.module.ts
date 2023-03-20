@@ -33,8 +33,7 @@ import { DetailArtistComponent } from './pages/detail-artist/detail-artist.compo
     HttpClientModule
   ],
   providers: [
-    DiscService,
-    ArtistService
+
   ],
   bootstrap: [AppComponent]
 })
